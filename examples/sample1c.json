@@ -1,0 +1,31 @@
+{
+    "general": {
+        "--source-addr" : "http://releases.1c.ru",
+        "--source-user" : "user",
+        "--source-pwd" : "pwd"
+    },
+    "repos" : [
+        {
+            "--config-filter" : ["Бухгалтерия предприятия КОРП.+3"],
+            "--version-filter" : ["3.+"],
+            "--first-version" : "3\\.0\\.69",
+            "--last-version" : "3\\.0\\.75",
+            "--version-file" : "$workDir/tmp/ACC/version",
+            "--updatable-versions-file" : "$workDir/tmp/ACC/version2update",
+            "--skip-versions" : [],
+            "--link-filter-full" : "Полный дистрибутив",
+            "--link-filter-update" : "Дистрибутив обновления",
+            "--download-path" : "$workDir/tmp/ACC",
+            "--templates-path" : "$workDir/tmp/ACC",
+            "--save-template" : true,
+            "--upload-full-version" : true,
+            "--tmp-database" : "/SMyServer/TMP_ACC",
+            "--storage-path" : "tcp://MyServer/1C_BASE_ACC",
+            "--storage-user" : "sync",
+            "--storage-pwd" : "sync",
+            "--git-path" : "$workDir/repo/1C_BASE_ACC",
+            "--git-committer-name" : "1c",
+            "--git-committer-email" : "1c@1c.ru"
+        }
+    ]
+}
