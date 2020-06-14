@@ -1,4 +1,4 @@
-# Yet anoter release downloader (YARD)
+# Yet another release downloader (YARD)
 
 [![GitHub release](https://img.shields.io/github/release/ArKuznetsov/yard.svg?style=flat-square)](https://github.com/ArKuznetsov/yard/releases)
 [![GitHub license](https://img.shields.io/github/license/ArKuznetsov/yard.svg?style=flat-square)](https://github.com/ArKuznetsov/yard/blob/develop/LICENSE)
