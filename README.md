@@ -45,7 +45,7 @@
 
 #### Пример:
 ```bat
-yabr process --work-dir "c:\tmp" ".\examples\releases2templates.json"
+yard process --work-dir "c:\tmp" ".\examples\releases2templates.json"
 ```
 см. [Файл настроек](#jsonsettings)
 
@@ -62,7 +62,7 @@ yabr process --work-dir "c:\tmp" ".\examples\releases2templates.json"
 
 #### Пример:
 ```bat
-yabr releases --user "user" --pwd "pwd" list --app-filter "Библиотека стандартных подсистем.*3\.1" --version-filter 3\.1.* --version-start-date "01.01.2019" --output-file ".\tmp\releases.json"
+yard releases --user "user" --pwd "pwd" list --app-filter "Библиотека стандартных подсистем.*3\.1" --version-filter 3\.1.* --version-start-date "01.01.2019" --output-file ".\tmp\releases.json"
 ```
 
   - **get** (g) - загрузка указанных версий, указанных приложений с портала 1С
@@ -78,7 +78,7 @@ yabr releases --user "user" --pwd "pwd" list --app-filter "Библиотека 
 
 #### Пример:
 ```bat
-yabr releases --user "user" --pwd "pwd" get --app-filter "Библиотека стандартных подсистем.*3\.1" --version-filter 3\.1.* --version-start-date "01.01.2019" --path ".\tmp\distr" --extract --extract-path ".\tmp\tmplts"
+yard releases --user "user" --pwd "pwd" get --app-filter "Библиотека стандартных подсистем.*3\.1" --version-filter 3\.1.* --version-start-date "01.01.2019" --path ".\tmp\distr" --extract --extract-path ".\tmp\tmplts"
 ```
 
 - **unpack** (u) - распаковка шаблона конфигурации 1С из EFD-файла дистрибутива конфигурации 1С
@@ -91,7 +91,7 @@ yabr releases --user "user" --pwd "pwd" get --app-filter "Библиотека �
 
 #### Пример:
 ```bat
-yabr unpack --app-name "Библиотека стандартных подсистем, редакция 3.1" --app-id "SSL31" --app-version "3.1.2.332" --path ".\tmp\distr\SSL31\3.1.2.332" --extract-path ".\tmp\tmplts"
+yard unpack --app-name "Библиотека стандартных подсистем, редакция 3.1" --app-id "SSL31" --app-version "3.1.2.332" --path ".\tmp\distr\SSL31\3.1.2.332" --extract-path ".\tmp\tmplts"
 ```
 
 - **build-cf** (b) - выполняет обновление конфигурации (CF) файлом обновления (CFU) и помещает результат в новый файл CF
@@ -101,7 +101,7 @@ yabr unpack --app-name "Библиотека стандартных подсис
 
 #### Пример:
 ```bat
-yabr build-cf --cf-path ".\tmp\tmplts\1c\AccountingCorp\3_0_64_54\1cv8.cf" --cfu-path ".\tmp\tmplts\1c\AccountingCorp\3_0_66_53\1cv8.cfu" --ibconnection "/SMyServer\TMP_BASE"
+yard build-cf --cf-path ".\tmp\tmplts\1c\AccountingCorp\3_0_64_54\1cv8.cf" --cfu-path ".\tmp\tmplts\1c\AccountingCorp\3_0_66_53\1cv8.cfu" --ibconnection "/SMyServer\TMP_BASE"
 ```
 
 - **build-all** (ba) - для всех файлов обновления (CFU) в каталоге ищет доступные для обновления файлы(CF) и выполняет обновление
@@ -110,7 +110,7 @@ yabr build-cf --cf-path ".\tmp\tmplts\1c\AccountingCorp\3_0_64_54\1cv8.cf" --cfu
 
 #### Пример:
 ```bat
-yabr build-all --path ".\tmp\tmplts\1c\AccountingCorp" --ibconnection "/SMyServer\TMP_BASE"
+yard build-all --path ".\tmp\tmplts\1c\AccountingCorp" --ibconnection "/SMyServer\TMP_BASE"
 ```
 
 - **upload-cf** (ucf) - выполняет выгрузку конфигурации 1С из файла конфигурации (CF) в репозитарий git
@@ -125,7 +125,7 @@ yabr build-all --path ".\tmp\tmplts\1c\AccountingCorp" --ibconnection "/SMyServe
 
 #### Пример:
 ```bat
-yabr upload-cf --cf-path ".\tmp\tmplts\SSL31\3.1.1.91\1cv8.cf" --git-path ".\tmp\repo\SSL31" --git-commit-message "Тест выгрузки БСП 3.1.1.91" --ibconnection "/SMyServer\TMP_BASE"
+yard upload-cf --cf-path ".\tmp\tmplts\SSL31\3.1.1.91\1cv8.cf" --git-path ".\tmp\repo\SSL31" --git-commit-message "Тест выгрузки БСП 3.1.1.91" --ibconnection "/SMyServer\TMP_BASE"
 ```
 
 - **upload-all** (ua) - выполняет выгрузку всех версий конфигурации 1С в каталоге в репозитарий git
@@ -138,7 +138,7 @@ yabr upload-cf --cf-path ".\tmp\tmplts\SSL31\3.1.1.91\1cv8.cf" --git-path ".\tmp
 
 #### Пример:
 ```bat
-yabr upload-all --path ".\tmp\tmplts\SSL31\" --cfname "1cv8.cf" --git-path ".\tmp\repo\SSL31" --ibconnection "/SMyServer\TMP_BASE"
+yard upload-all --path ".\tmp\tmplts\SSL31\" --cfname "1cv8.cf" --git-path ".\tmp\repo\SSL31" --ibconnection "/SMyServer\TMP_BASE"
 ```
 
 ## Управляющие обработки
@@ -297,7 +297,7 @@ yabr upload-all --path ".\tmp\tmplts\SSL31\" --cfname "1cv8.cf" --git-path ".\tm
 ### Доступные подстановки
 
 - **$settingsDir** - каталог файла настроек
-- **$yabrDir** - каталог запуска скрипта
+- **$yardDir** - каталог запуска скрипта
 - **$workDir** - указанный при запуске рабочий каталог (по умолчанию: каталог файла настроек)
 
 ### Пример файла настроек
