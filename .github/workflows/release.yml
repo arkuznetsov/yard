@@ -9,8 +9,8 @@ on:
         types: [published, edited]
 
 env:
-ACTIONS_ALLOW_UNSECURE_COMMANDS: true
-PACKAGE_MASK: yard-*.ospx
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+  PACKAGE_MASK: yard-*.ospx
 
 jobs:
   build:
