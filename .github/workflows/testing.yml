@@ -6,6 +6,10 @@ name: Тестирование
 # Любой пуш и pr в проекте
 on: [push, pull_request]
 
+env:
+  # отключение безопасности установки, от 2020-10-01
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+
 jobs:
   build:
     runs-on: ${{ matrix.os }}
