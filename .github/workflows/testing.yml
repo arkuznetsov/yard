@@ -9,6 +9,8 @@ on: [push, pull_request]
 env:
   # отключение безопасности установки, от 2020-10-01
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+  YARD_RELEASES_USER: ${{ secrets.YARD_RELEASES_USER }}
+  YARD_RELEASES_PWD: ${{ secrets.YARD_RELEASES_PWD }}
 
 jobs:
   build:
