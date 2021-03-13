@@ -2,10 +2,10 @@
 
 [![GitHub release](https://img.shields.io/github/release/ArKuznetsov/yard.svg?style=flat-square)](https://github.com/ArKuznetsov/yard/releases)
 [![GitHub license](https://img.shields.io/github/license/ArKuznetsov/yard.svg?style=flat-square)](https://github.com/ArKuznetsov/yard/blob/develop/LICENSE)
-[![Build Status](https://travis-ci.org/arkuznetsov/yard.svg?branch=develop)](https://travis-ci.org/arkuznetsov/yard)
-[![Quality Gate](https://oskk-sonar.1solution.ru/api/badges/gate?key=yard)](https://oskk-sonar.1solution.ru/dashboard/index/yard)
-[![Coverage](https://oskk-sonar.1solution.ru/api/badges/measure?key=yard&metric=coverage)](https://oskk-sonar.1solution.ru/dashboard/index/yard)
-[![Tech debt](https://oskk-sonar.1solution.ru/api/badges/measure?key=yard&metric=sqale_debt_ratio)](https://oskk-sonar.1solution.ru/dashboard/index/yard)
+[![Build Status](https://img.shields.io/github/workflow/status/ArKuznetsov/yard/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%20%D0%BA%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B0)](https://github.com/arkuznetsov/yard/actions/)
+[![Quality Gate](https://img.shields.io/sonar/quality_gate/yard?server=https%3A%2F%2Fopen.checkbsl.org&sonarVersion=8.6)](https://open.checkbsl.org/dashboard/index/yard)
+[![Coverage](https://img.shields.io/sonar/coverage/yard?server=https%3A%2F%2Fopen.checkbsl.org&sonarVersion=8.6)](https://open.checkbsl.org/dashboard/index/yard)
+[![Tech debt](https://img.shields.io/sonar/tech_debt/yard?server=https%3A%2F%2Fopen.checkbsl.org&sonarVersion=8.6)](https://open.checkbsl.org/dashboard/index/yard)
 
 Приложение oscript для загрузки и обработки релизов конфигураций 1С.
 
@@ -19,6 +19,12 @@
 - [tempfiles](https://github.com/oscript-library/tempfiles)
 - [fs](https://github.com/oscript-library/fs)
 - [7-zip](http://www.7-zip.org/)
+
+**Важно:** Архиватор 7-zip должен поддерживать распаковку rar-архивов. Для этого на linux нужно поставить пакет с поддержкой такого режима.
+Например, на Ubuntu:
+```shell
+apt-get install p7zip-rar p7zip-full
+```
 
 ## Общие сведения
 
