@@ -20,6 +20,12 @@
 - [fs](https://github.com/oscript-library/fs)
 - [7-zip](http://www.7-zip.org/)
 
+**Важно:** Архиватор 7-zip должен поддерживать распаковку rar-архивов. Для этого на linux нужно поставить пакет с поддержкой такого режима.
+Например, на Ubuntu:
+```shell
+apt-get install p7zip-rar p7zip-full
+```
+
 ## Общие сведения
 
 - выполняет загрузку приложений с [сайта релизов 1С](https://releases.1c.ru)

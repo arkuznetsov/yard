@@ -3,3 +3,6 @@ tmp*
 coverage
 test-reports
 *.ospx
+
+
+oscript_modules/
