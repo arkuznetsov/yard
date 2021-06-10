@@ -788,6 +788,7 @@
 	
 	ШаблонПоискаВерсий = "<td class=""versionColumn"">\s*<a href=""(.*)"">\s*(.*)\s*<\/a>(\s|.)*?"
 	                   + "<td class=""dateColumn"">\s*(.*)\s*<\/td>(\s|.)*?"
+					   + "(?:<td class=""itsColumn"">\s*(?:.*)\s*<\/td>(?:\s|.)*?)?"
 	                   + "<td class=""version previousVersionsColumn"">\s*(.*)\s*<\/td>";
 
 	ШаблонПоискаКолонокБетаВерсий = "<td class=""versionColumn"">.*?<\/td><td class=""versionColumn"">(.*?)"
