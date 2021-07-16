@@ -3,9 +3,11 @@
 [![GitHub release](https://img.shields.io/github/release/ArKuznetsov/yard.svg?style=flat-square)](https://github.com/ArKuznetsov/yard/releases)
 [![GitHub license](https://img.shields.io/github/license/ArKuznetsov/yard.svg?style=flat-square)](https://github.com/ArKuznetsov/yard/blob/develop/LICENSE)
 [![Build Status](https://img.shields.io/github/workflow/status/ArKuznetsov/yard/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%20%D0%BA%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B0)](https://github.com/arkuznetsov/yard/actions/)
-[![Quality Gate](https://img.shields.io/sonar/quality_gate/yard?server=https%3A%2F%2Fopen.checkbsl.org&sonarVersion=8.6)](https://open.checkbsl.org/dashboard/index/yard)
-[![Coverage](https://img.shields.io/sonar/coverage/yard?server=https%3A%2F%2Fopen.checkbsl.org&sonarVersion=8.6)](https://open.checkbsl.org/dashboard/index/yard)
-[![Tech debt](https://img.shields.io/sonar/tech_debt/yard?server=https%3A%2F%2Fopen.checkbsl.org&sonarVersion=8.6)](https://open.checkbsl.org/dashboard/index/yard)
+[![Quality Gate](https://open.checkbsl.org/api/project_badges/measure?project=yard&metric=alert_status)](https://open.checkbsl.org/dashboard/index/yard)
+[![Coverage](https://open.checkbsl.org/api/project_badges/measure?project=yard&metric=coverage)](https://open.checkbsl.org/dashboard/index/yard)
+[![Tech debt](https://open.checkbsl.org/api/project_badges/measure?project=yard&metric=sqale_index)](https://open.checkbsl.org/dashboard/index/yard)
+
+
 
 Приложение oscript для загрузки и обработки релизов конфигураций 1С.
 
