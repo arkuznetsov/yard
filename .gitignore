@@ -1,5 +1,6 @@
 .vscode
 tmp*
+v8r_TempDB*
 coverage
 test-reports
 *.ospx
