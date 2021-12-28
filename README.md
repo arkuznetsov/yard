@@ -54,6 +54,10 @@ apt-get install p7zip-rar p7zip-full
   - _--work-dir_ - путь к рабочему каталогу (по умолчанию: текущий каталог)
   - _<Путь>_ - путь к файлу настроек (по умолчанию ./yardsettings.json)
 
+  Пользователя и пароль портала 1С можно передать с помощью переменных среды:
+    * `YARD_RELEASES_USER` - пользователь портала 1С;
+    * `YARD_RELEASES_PWD` - пароль пользователя портала 1С.
+
 #### Пример:
 ```bat
 yard process --work-dir "c:\tmp" ".\examples\releases2templates.json"
