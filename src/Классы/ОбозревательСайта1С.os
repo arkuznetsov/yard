@@ -757,9 +757,9 @@
 //
 Процедура Инициализация()
 	
-	СервисАвторизации = "https://login.1c.ru";
+	СервисАвторизации = "https://login.1c.eu";
 
-	СервисРелизов = "https://releases.1c.ru";
+	СервисРелизов = "https://releases.1c.eu";
 	СтраницаСпискаРелизов = "/total";
 
 	ШаблонСтрокиРегистрации = "inviteCode=&username=%1&password=%2&execution=%3"
@@ -772,7 +772,7 @@
 	
 	ШаблонПоискаКонфигураций = "<td class=""nameColumn""><a href=""(.*)"">(.*)<\/a>.*"
 	                         + "<td class=""versionColumn actualVersionColumn"">"
-	                         + "<a href="".*nick=(.*)&ver=(\d(?:\d|\.)*)"">.*"
+	                         + "<a href="".*nick=(.*)&ver=.*(\d(?:\d|\.)*)"">.*"
 	                         + "?<td class=""releaseDate"">.*?(\d(?:\d|\.)*)";
 	
 	ШаблонПоискаВерсий = "<td class=""versionColumn"">\s*<a href=""(.*)"">\s*(.*)\s*<\/a>(\s|.)*?"
