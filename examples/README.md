@@ -9,7 +9,7 @@
 | 1 | [SSL31](https://github.com/arkuznetsov/yard/tree/develop/examples/libraries/SSL31.json) | Библиотека стандартных подсистем, редакция 3.1 ["3.1.2.*"] | Только загрузка | _https://releases.1c.ru/project/SSL31_ |
 | 2 | [SSL31](https://github.com/arkuznetsov/yard/tree/develop/examples/libraries/SSL31_2git.json) | Библиотека стандартных подсистем, редакция 3.1 ["3.1.2.*"] | Загрузка, выгрузка в GIT | _https://releases.1c.ru/project/SSL31_ |
 | 3 | [DMIL](https://github.com/arkuznetsov/yard/tree/develop/examples/libraries/DMIL_2git.json) | 1С:Библиотека интеграции с 1С:Документооборотом, редакция 1.1 |Загрузка, выгрузка в GIT | _https://releases.1c.ru/project/DMIL_ |
-| 4 | [DMIL](https://github.com/arkuznetsov/yard/tree/develop/examples/libraries/DMIL3_2git.json) -Новинка 2022 | 1С:Библиотека интеграции с 1С:Документооборотом, редакция 3.0 |Загрузка, выгрузка в GIT | _https://releases.1c.ru/project/DMIL3_ |
+| 4 | [DMIL3](https://github.com/arkuznetsov/yard/tree/develop/examples/libraries/DMIL3_2git.json) -Новинка 2022 | 1С:Библиотека интеграции с 1С:Документооборотом, редакция 3.0 |Загрузка, выгрузка в GIT | _https://releases.1c.ru/project/DMIL3_ |
 
 ### Выгрузка Типовых конфигураций фирмы "1С": 
 | № | Ссылка на json | Полное_наименование_на_русском | Используемые обработчики | Ссылка на сайт релизов |
