@@ -1,5 +1,3 @@
-# Yet another release downloader (YARD)
-
 [![GitHub release](https://img.shields.io/github/release/ArKuznetsov/yard.svg?style=flat-square)](https://github.com/ArKuznetsov/yard/releases)
 [![GitHub license](https://img.shields.io/github/license/ArKuznetsov/yard.svg?style=flat-square)](https://github.com/ArKuznetsov/yard/blob/develop/LICENSE)
 [![GitHub Releases](https://img.shields.io/github/downloads/ArKuznetsov/yard/latest/total?style=flat-square)](https://github.comArKuznetsov/yard/releases)
@@ -10,7 +8,9 @@
 [![Coverage](https://open.checkbsl.org/api/project_badges/measure?project=yard&metric=coverage)](https://open.checkbsl.org/dashboard/index/yard)
 [![Tech debt](https://open.checkbsl.org/api/project_badges/measure?project=yard&metric=sqale_index)](https://open.checkbsl.org/dashboard/index/yard)
 
+<div style="text-align:right"><a href="https://checkbsl.org"><img alt="Checked by Silver Bulleters SonarQube BSL plugin" src="https://web-files.do.bit-erp.ru/sonar/b_t.png" style="width:400px"/></a></div>
 
+# Yet another release downloader (YARD)
 
 Приложение oscript для загрузки и обработки релизов конфигураций 1С.
 
