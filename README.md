@@ -8,7 +8,7 @@
 [![Coverage](https://open.checkbsl.org/api/project_badges/measure?project=yard&metric=coverage)](https://open.checkbsl.org/dashboard/index/yard)
 [![Tech debt](https://open.checkbsl.org/api/project_badges/measure?project=yard&metric=sqale_index)](https://open.checkbsl.org/dashboard/index/yard)
 
-<div style="text-align:right"><a href="https://checkbsl.org"><img alt="Checked by Silver Bulleters SonarQube BSL plugin" src="https://web-files.do.bit-erp.ru/sonar/b_t.png" style="width:400px"/></a></div>
+<a href="https://checkbsl.org"><img alt="Checked by Silver Bulleters SonarQube BSL plugin" src="https://web-files.do.bit-erp.ru/sonar/b_t.png" align="right" style="width:400px"/></a>
 
 # Yet another release downloader (YARD)
 
