@@ -8,7 +8,7 @@
     "ШаблонПоискаСтрокКонфигураций" : "<tr(?:.|\\s)*?>.*?<\\/tr>",
     "ШаблонПоискаКонфигураций" : "<td class=\"nameColumn\"><a href=\"(.*?)\">(.*?)<\\/a>.*?<td class=\"versionColumn",
     "ШаблонПоискаКонфигурацийСВерсиями" : "<td class=\"nameColumn\"><a href=\"(.*?)\">(.*?)<\\/a>.*<td class=\"versionColumn actualVersionColumn\"><a href=\".*nick=(.*)&ver=(\\d(?:\\d|\\.)*)\">.*?<td class=\"releaseDate\">.*?(\\d(?:\\d|\\.)*)",
-    "ШаблонПоискаКолонокБетаВерсий" : "<td class=\"versionColumn\">.*?<\\/td><td class=\"versionColumn\">(.*?)<td class=\"publicationDate\">(.*?)<\\/td>",
+    "ШаблонПоискаКолонокБетаВерсий" : "<td class=\"versionColumn\\s*\">.*?<\\/td><td class=\"versionColumn\">(.*?)<td class=\"publicationDate\">(.*?)<\\/td>",
     "ШаблонПоискаСсылокБетаВерсий" : "<a href=\"(.*?\\?nick=(.*?)&ver=(.*?))\">.*?<\\/a><br.*?>",
     "ШаблонПоискаДатБетаВерсий" : "(\\d\\d\\.\\d\\d\\.\\d\\d)+",
     "ШаблонПоискаВерсий" : "<td class=\"versionColumn\">\\s*<a href=\"(.*)\">\\s*(.*)\\s*<\\/a>(\\s|.)*?<td class=\"dateColumn\">\\s*(.*)\\s*<\\/td>(\\s|.)*?(?:<td class=\"itsColumn\">\\s*(?:.*)\\s*<\\/td>(?:\\s|.)*?)?<td class=\"previousVersionsColumn\">\\s*(.*)\\s*<\\/td>",
