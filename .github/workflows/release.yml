@@ -28,7 +28,7 @@ jobs:
 
       # Установка OneScript конкретной версии
       - name: Установка OneScript
-        uses: otymko/setup-onescript@v1.0
+        uses: otymko/setup-onescript@v1.5.1
         with:
           version: ${{ matrix.oscript_version }}
 
@@ -42,13 +42,13 @@ jobs:
         run: opm build
 
       - name: Заливка артифактов
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: package.zip
           path: ./${{ env.PACKAGE_MASK }}
 
       - name: Заливка в релиз
-        uses: AButler/upload-release-assets@v1.0
+        uses: AButler/upload-release-assets@v4.0
         with:
           files: ./${{ env.PACKAGE_MASK }}
           repo-token: ${{ secrets.GITHUB_TOKEN }}
