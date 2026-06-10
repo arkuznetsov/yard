@@ -2,17 +2,16 @@
 
 Приложение oscript для загрузки и обработки релизов конфигураций 1С.
 
-<a href="https://checkbsl.org"><img alt="Checked by Silver Bulleters SonarQube BSL plugin" src="https://web-files.do.bit-erp.ru/sonar/b_t.png" align="right" style="width:400px"/></a>
-
 [![GitHub release](https://img.shields.io/github/release/ArKuznetsov/yard.svg?style=flat-square)](https://github.com/ArKuznetsov/yard/releases)
 [![GitHub license](https://img.shields.io/github/license/ArKuznetsov/yard.svg?style=flat-square)](https://github.com/ArKuznetsov/yard/blob/develop/LICENSE)
 [![GitHub Releases](https://img.shields.io/github/downloads/ArKuznetsov/yard/latest/total?style=flat-square)](https://github.comArKuznetsov/yard/releases)
 [![GitHub All Releases](https://img.shields.io/github/downloads/ArKuznetsov/yard/total?style=flat-square)](https://github.com/ArKuznetsov/yard/releases)
+[![OpenYellow](https://openyellow.openintegrations.dev/data/badges/272277708.svg)](https://openyellow.org/grid?filter=top&repo=272277708)
 
 [![Build Status](https://img.shields.io/github/workflow/status/ArKuznetsov/yard/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%20%D0%BA%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B0)](https://github.com/arkuznetsov/yard/actions/)
-[![Quality Gate](https://open.checkbsl.org/api/project_badges/measure?project=yard&metric=alert_status)](https://open.checkbsl.org/dashboard/index/yard)
-[![Coverage](https://open.checkbsl.org/api/project_badges/measure?project=yard&metric=coverage)](https://open.checkbsl.org/dashboard/index/yard)
-[![Tech debt](https://open.checkbsl.org/api/project_badges/measure?project=yard&metric=sqale_index)](https://open.checkbsl.org/dashboard/index/yard)
+[![Quality Gate](https://sonar.openbsl.ru/api/project_badges/measure?project=yard&metric=alert_status)](https://sonar.openbsl.ru/dashboard/index/yard)
+[![Coverage](https://sonar.openbsl.ru/api/project_badges/measure?project=yard&metric=coverage)](https://sonar.openbsl.ru/dashboard/index/yard)
+[![Tech debt](https://sonar.openbsl.ru/api/project_badges/measure?project=yard&metric=sqale_index)](https://sonar.openbsl.ru/dashboard/index/yard)
 
 Требуются следующие библиотеки и инструменты:
 

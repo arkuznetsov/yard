@@ -1,4 +1,7 @@
+.scannerwork
+.sonar
 .vscode
+.env
 tmp*
 v8r_TempDB*
 coverage
