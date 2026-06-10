@@ -11,6 +11,7 @@ env:
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
   YARD_RELEASES_USER: ${{ secrets.YARD_RELEASES_USER }}
   YARD_RELEASES_PWD: ${{ secrets.YARD_RELEASES_PWD }}
+  SONAR_SCANNER_SKIP_JRE_PROVISIONING: true
 
 jobs:
   build:
@@ -32,7 +33,9 @@ jobs:
       # https://stackoverflow.com/questions/58033366/how-to-get-current-branch-within-github-actions
       - name: Извлечение имени текущей ветки
         shell: bash
-        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        run: |
+          BRANCH=$(echo ${GITHUB_REF#refs/heads/})
+          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
         id: extract_branch
 
       # Установка OneScript конкретной версии
@@ -47,24 +50,32 @@ jobs:
           opm install opm
           opm install --dev
 
+      - name: Установка Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'zulu' # See 'Supported distributions' for available options
+          java-version: '21'
+
       # Запуск тестов и сбор покрытия кода
       - name: Покрытие кода
         run: oscript ./tasks/coverage.os
 
       - name: Извлечение версии пакета
         shell: bash
-        run: echo "##[set-output name=version;]`cat packagedef | grep ".Версия(" | sed 's|[^"]*"||' | sed -r 's/".+//'`"
+        run: |
+          VERSION=$(cat packagedef | grep ".Версия(" | sed 's|[^"]*"||' | sed -r 's/".+//')
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
         id: extract_version
-
-      - name: Установка Sonar-scanner
-        uses: warchant/setup-sonar-scanner@v1
 
       # Анализ проекта в SonarQube (ветка)
       - name: Анализ в SonarQube (branch)
         if: github.event_name == 'push'
-        run: sonar-scanner
-            -Dsonar.login=${{ secrets.SONARQUBE_TOKEN }}
-            -Dsonar.host.url=${{ secrets.SONARQUBE_HOST }}
+        uses: SonarSource/sonarqube-scan-action@v8.2.0
+        env:
+          SONAR_HOST_URL: ${{ vars.SONARQUBE_HOST }}
+          SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
+        with:
+          args: >
             -Dsonar.branch.name=${{ steps.extract_branch.outputs.branch }}
             -Dsonar.projectVersion=${{ steps.extract_version.outputs.version }}
 
@@ -72,9 +83,12 @@ jobs:
       # https://docs.sonarqube.org/latest/analysis/pull-request/
       - name: Анализ в SonarQube (pull-request)
         if: github.event_name == 'pull_request'
-        run: sonar-scanner
-            -Dsonar.login=${{ secrets.SONARQUBE_TOKEN }}
-            -Dsonar.host.url=${{ secrets.SONARQUBE_HOST }}
+        uses: SonarSource/sonarqube-scan-action@v8.2.0
+        env:
+          SONAR_HOST_URL: ${{ vars.SONARQUBE_HOST }}
+          SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
+        with:
+          args: >
             -Dsonar.branch.name=${{ steps.extract_branch.outputs.branch }}
             -Dsonar.pullrequest.key=${{ github.event.pull_request.number }}
             -Dsonar.pullrequest.branch=${{ github.event.pull_request.head.ref }}

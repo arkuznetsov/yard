@@ -24,7 +24,7 @@ jobs:
     steps:
       # Загрузка проекта
       - name: Актуализация
-        uses: actions/checkout@v2
+        uses: actions/checkout@v6
 
       # Установка OneScript конкретной версии
       - name: Установка OneScript
