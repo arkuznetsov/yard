@@ -7,7 +7,7 @@
     "ШаблонПоискаСтрокиРегистрации" : "<input type=\"hidden\" name=\"execution\" value=\"(.*)\"\\/><input type=\"hidden\" name=\"_eventId\"",
     "ШаблонПоискаСтрокКонфигураций" : "<tr(?:.|\\s)*?>.*?<\\/tr>",
     "ШаблонПоискаКонфигураций" : "<td class=\"nameColumn\"><a href=\"(.*?)\">(.*?)<\\/a>.*?<td class=\"versionColumn",
-    "ШаблонПоискаКонфигурацийСВерсиями" : "<td class=\"nameColumn\"><a href=\"(.*?)\">(.*?)<\\/a>.*<td class=\"versionColumn actualVersionColumn\"><a href=\".*nick=(.*)&ver=(\\d(?:\\d|\\.)*)\">.*?<td class=\"releaseDate\">.*?(\\d(?:\\d|\\.)*)",
+    "ШаблонПоискаКонфигурацийСВерсиями" : "<td class=\"nameColumn\"><a href=\"(.*?)\">(.*?)<\\/a>.*<td class=\"versionColumn actualVersionColumn\"><a href=\".*nick=(.*)&ver=([\\d\\.A-Za-z\\-]+)\">.*?<td class=\"releaseDate\">.*?([\\d\\.A-Za-z\\-]+)",
     "ШаблонПоискаКолонокБетаВерсий" : "<td class=\"versionColumn\\s*\">.*?<\\/td><td class=\"versionColumn\">(.*?)<td class=\"publicationDate\">(.*?)<\\/td>",
     "ШаблонПоискаСсылокБетаВерсий" : "<a href=\"(.*?\\?nick=(.*?)&ver=(.*?))\">.*?<\\/a><br.*?>",
     "ШаблонПоискаДатБетаВерсий" : "(\\d\\d\\.\\d\\d\\.\\d\\d)+",
